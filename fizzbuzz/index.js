@@ -12,6 +12,44 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+
+// for each number between 1 and n console log number
+// if current number % 3 print fizz
+// if current number % 5 print buzz
+// if current number % 5 && 3 print fizzbuzz
+
+function fizzBuzz(n) {
+
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("fizzbuzz")
+    } else if (i % 3 === 0) {
+      console.log("fizz");
+    } else if (i % 5 === 0) {
+      console.log('buzz')
+    } else {
+      console.log(i)
+      }
+  }
+}
+
+/*
+function fizzBuzz(n) {
+  let final = [];
+
+  for (let i = 1; i <= n; i++) {
+    if (i % 15 === 0) {
+      final.push("fizzbuzz")
+    } else if (i % 3 === 0) {
+      final.push("fizz");
+    } else if (i % 5 === 0) {
+      final.push('buzz')
+    } else {
+      final.push(i)
+      }
+  }
+  final.forEach(el => console.log(el))
+}
+*/
 
 module.exports = fizzBuzz;
