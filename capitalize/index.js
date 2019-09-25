@@ -11,6 +11,8 @@ function capitalize(str) {
   let finalStr = [];
   let words = str.split(' ');
 
+  //look
+
   for (let word of words) {
     finalStr.push(word[0].toUpperCase() + word.slice(1))
   }
