@@ -31,6 +31,8 @@ function slowFib(n) {
 }
 
 const fib = memoize(slowFib);
+
+
 // function fib(n) {
 //   let sequence = [0, 1]
 //
